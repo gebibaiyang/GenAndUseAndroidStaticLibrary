@@ -1,0 +1,2 @@
+# GenAndUseAndroidStaticLibrary
+通过android studio 和ndk生成Android 平台的静态库，以及使用静态库demo
