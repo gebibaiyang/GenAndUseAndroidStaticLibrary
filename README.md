@@ -1,14 +1,14 @@
 # GenAndUseAndroidStaticLibrary
 通过android studio 和ndk生成Android 平台的静态库，以及使用静态库demo
 
-#环境说明
-Android studio version 3.1.4
-OS MacOS 10.13.6
-生成静态库 NDK version r17
-使用静态库 NDK version r18
-其实操作系统，Android studio，以及NDK 均对demo运行无影响，大家可以自行设置
+## 环境说明  
+Android studio version 3.1.4  
+OS MacOS 10.13.6  
+生成静态库 NDK version r17  
+使用静态库 NDK version r18  
+其实操作系统，Android studio，以及NDK 均对demo运行无影响，大家可以自行设置  
 
-GenStaticLibrary  生成Android平台静态库demo
+## GenStaticLibrary  生成Android平台静态库demo
 1. 创建普通android 工程即可（不要勾选include c++ support）
 2. 添加工程下jni目录及其中的示例文件
 3. 切换至jni 目录环境，运行ndk-build 命令
@@ -18,7 +18,7 @@ GenStaticLibrary  生成Android平台静态库demo
 1) 相关设置都在Android.mk 和 Application.mk 中完成
 2) 如果命令运行成功，则会生成各个平台下的mystaticLibrary.a 文件
 
-UseStaticLibrary  Android平台使用静态库demo
+## UseStaticLibrary  Android平台使用静态库demo
 1. 创建android 工程（勾选include c++ support）
 2. 在main 目录下添加jniLibs 目录，存放相关平台下的mystaticLibrary.a 文件
 3. 在cpp 目录下添加include 目录，存放相关的 *.h 文件
